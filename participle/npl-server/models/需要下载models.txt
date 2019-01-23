@@ -1,0 +1,3 @@
+1.模型下载连接：http://thulac.thunlp.org/message_v1_1
+下载之后替换models文件
+2.Thulac 分词github地址 ：https://github.com/thunlp/THULAC

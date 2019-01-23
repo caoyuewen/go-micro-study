@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package go.micro.srv.npl;
+
+// NPL processing service
+service NplService {
+    rpc GetParticiple (SentenceRequest) returns (NplResponse) {
+    }
+}
+
+// NPL response
+message NplResponse {
+    repeated Participle participle = 1;
+}
+
+// NPL Participle
+message Participle {
+    string word = 1;
+    int32 wordtype = 2;
+}
+
+// NPL Request
+message SentenceRequest {
+    string sentence = 1;
+}
